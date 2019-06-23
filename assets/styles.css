@@ -1,0 +1,213 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+  color: #999999;
+  text-decoration: none;
+  transition: all 250ms ease;
+}
+
+a:hover {
+  color: #666666;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header-logo {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #a9a9a9;
+  padding-left: 14px;
+  margin-left: 5px;
+  color: #666666;
+  line-height: 22px;
+}
+
+.slug {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.slug-emp {
+  color: #42C3FA;
+  font-weight: bold;
+}
+
+.mission {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #666666;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.text-input {
+  border: 2px solid #f4f4f5;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  max-width: 404px;
+}
+
+.subscribe-btn {
+  position: relative;
+  top: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  color: #42C3FA;
+  border: 2px solid #42C3FA;
+  border-radius: 25px;
+  -webkit-box-shadow: 4px 5px 0px 0px rgba(204,204,204,0.5);
+  -moz-box-shadow: 4px 5px 0px 0px rgba(204,204,204,0.5);
+  box-shadow: 4px 5px 0px 0px rgba(204,204,204,0.5);
+  padding: 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: white;
+  width: 160px;
+  transition: 250ms ease;
+  transition-property: top, box-shadow;
+}
+
+.subscribe-btn:active {
+  box-shadow: none;
+  top: 2px;
+}
+
+.sig {
+  display: none;
+}
+
+.copyright {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.social-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.legal-links {
+  font-size: 14px;
+}
+
+.legal-links > a {
+  margin-right: 10px;
+}
+
+.right-panel {
+  display: none;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links > a {
+  opacity: 0.65;
+}
+
+.social-links > a:hover {
+  opacity: 1;
+}
+
+/* iPad Portrait + larger */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .left-panel, .right-panel {
+    flex: 1 1 0;
+  }
+
+  .left-panel {
+    max-width: 500px;
+  }
+
+  .right-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 540px;
+  }
+
+  .hero-logo {
+    border-radius: 25px;
+    width: 57%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-links {
+    order: 2;
+    margin-right: 10px;
+    min-width: 120px;
+  }
+
+  .social-links > a:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sig {
+    display: inline-block;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    width: 190px;
+    position: absolute;
+    bottom: -60px;
+    right: 70px;
+  }
+}

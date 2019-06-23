@@ -1,0 +1,58 @@
+.switch {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 0 0 50%;
+  position: relative;
+  max-width: 404px;
+  margin-bottom: 10px;
+  background: rgba(66, 195, 250, 0.25);
+  border-radius: 25px;
+}
+
+.switch-label {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 25px;
+  width: 200px;
+  line-height: 37px;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  transition: 150ms ease-in;
+  transition-property: background, color;
+}
+
+.switch-label:hover {
+  background: rgba(66, 195, 250, 0.2);
+}
+
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-left {
+  margin-left: 4px;
+}
+
+.switch-label-right {
+  margin-right: 4px;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.switch-input:checked + .switch-label {
+  background: #000000;
+}
